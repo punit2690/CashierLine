@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D561EF51D88E1B1004C0EEA /* CustomerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */; };
+		8D561EF81D88F1C1004C0EEA /* CustomerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF71D88F1C1004C0EEA /* CustomerModel.m */; };
+		8DCB31461D8B8BD200BB1ADE /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */; };
+		8DCB31491D8D925300BB1ADE /* CashierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB31481D8D925300BB1ADE /* CashierViewController.m */; };
+		8DCB314C1D8D9BBD00BB1ADE /* CustomBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB314B1D8D9BBD00BB1ADE /* CustomBarButtonItem.m */; };
 		8DE3F8361D8486B40021668A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F8351D8486B40021668A /* main.m */; };
 		8DE3F8391D8486B40021668A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F8381D8486B40021668A /* AppDelegate.m */; };
-		8DE3F83C1D8486B40021668A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F83B1D8486B40021668A /* ViewController.m */; };
+		8DE3F83C1D8486B40021668A /* CashierLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F83B1D8486B40021668A /* CashierLineViewController.m */; };
 		8DE3F83F1D8486B40021668A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F83D1D8486B40021668A /* Main.storyboard */; };
 		8DE3F8411D8486B40021668A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F8401D8486B40021668A /* Assets.xcassets */; };
 		8DE3F8441D8486B40021668A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F8421D8486B40021668A /* LaunchScreen.storyboard */; };
 		8DE3F84F1D8486B40021668A /* CashierLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F84E1D8486B40021668A /* CashierLineTests.m */; };
+		8DE3F85E1D84C5730021668A /* RoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F85D1D84C5730021668A /* RoundedButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +33,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D561EF31D88E1B1004C0EEA /* CustomerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerViewCell.h; path = Views/CustomerViewCell.h; sourceTree = "<group>"; };
+		8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerViewCell.m; path = Views/CustomerViewCell.m; sourceTree = "<group>"; };
+		8D561EF61D88F1C1004C0EEA /* CustomerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerModel.h; path = Models/CustomerModel.h; sourceTree = "<group>"; };
+		8D561EF71D88F1C1004C0EEA /* CustomerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerModel.m; path = Models/CustomerModel.m; sourceTree = "<group>"; };
+		8DCB31441D8B8BD200BB1ADE /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
+		8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
+		8DCB31471D8D925300BB1ADE /* CashierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierViewController.h; sourceTree = "<group>"; };
+		8DCB31481D8D925300BB1ADE /* CashierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashierViewController.m; sourceTree = "<group>"; };
+		8DCB314A1D8D9BBD00BB1ADE /* CustomBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomBarButtonItem.h; path = Views/CustomBarButtonItem.h; sourceTree = "<group>"; };
+		8DCB314B1D8D9BBD00BB1ADE /* CustomBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomBarButtonItem.m; path = Views/CustomBarButtonItem.m; sourceTree = "<group>"; };
 		8DE3F8311D8486B40021668A /* CashierLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashierLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE3F8351D8486B40021668A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DE3F8371D8486B40021668A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DE3F8381D8486B40021668A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8DE3F83A1D8486B40021668A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8DE3F83B1D8486B40021668A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DE3F83A1D8486B40021668A /* CashierLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashierLineViewController.h; sourceTree = "<group>"; };
+		8DE3F83B1D8486B40021668A /* CashierLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashierLineViewController.m; sourceTree = "<group>"; };
 		8DE3F83E1D8486B40021668A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DE3F8401D8486B40021668A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE3F8431D8486B40021668A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +56,8 @@
 		8DE3F84A1D8486B40021668A /* CashierLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashierLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE3F84E1D8486B40021668A /* CashierLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashierLineTests.m; sourceTree = "<group>"; };
 		8DE3F8501D8486B40021668A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE3F85C1D84C5730021668A /* RoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundedButton.h; path = Views/RoundedButton.h; sourceTree = "<group>"; };
+		8DE3F85D1D84C5730021668A /* RoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedButton.m; path = Views/RoundedButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +99,11 @@
 		8DE3F8331D8486B40021668A /* CashierLine */ = {
 			isa = PBXGroup;
 			children = (
+				8DE3F85B1D84C50C0021668A /* Models */,
+				8DE3F85A1D84C5040021668A /* ViewControllers */,
+				8DE3F8591D84C4FC0021668A /* Views */,
 				8DE3F8371D8486B40021668A /* AppDelegate.h */,
 				8DE3F8381D8486B40021668A /* AppDelegate.m */,
-				8DE3F83A1D8486B40021668A /* ViewController.h */,
-				8DE3F83B1D8486B40021668A /* ViewController.m */,
-				8DE3F83D1D8486B40021668A /* Main.storyboard */,
-				8DE3F8401D8486B40021668A /* Assets.xcassets */,
-				8DE3F8421D8486B40021668A /* LaunchScreen.storyboard */,
-				8DE3F8451D8486B40021668A /* Info.plist */,
 				8DE3F8341D8486B40021668A /* Supporting Files */,
 			);
 			path = CashierLine;
@@ -97,6 +112,9 @@
 		8DE3F8341D8486B40021668A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DE3F8401D8486B40021668A /* Assets.xcassets */,
+				8DE3F8451D8486B40021668A /* Info.plist */,
+				8DE3F8421D8486B40021668A /* LaunchScreen.storyboard */,
 				8DE3F8351D8486B40021668A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -109,6 +127,42 @@
 				8DE3F8501D8486B40021668A /* Info.plist */,
 			);
 			path = CashierLineTests;
+			sourceTree = "<group>";
+		};
+		8DE3F8591D84C4FC0021668A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DE3F83D1D8486B40021668A /* Main.storyboard */,
+				8DE3F85C1D84C5730021668A /* RoundedButton.h */,
+				8DE3F85D1D84C5730021668A /* RoundedButton.m */,
+				8D561EF31D88E1B1004C0EEA /* CustomerViewCell.h */,
+				8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */,
+				8DCB314A1D8D9BBD00BB1ADE /* CustomBarButtonItem.h */,
+				8DCB314B1D8D9BBD00BB1ADE /* CustomBarButtonItem.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8DE3F85A1D84C5040021668A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DE3F83A1D8486B40021668A /* CashierLineViewController.h */,
+				8DE3F83B1D8486B40021668A /* CashierLineViewController.m */,
+				8DCB31441D8B8BD200BB1ADE /* AddCustomerViewController.h */,
+				8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */,
+				8DCB31471D8D925300BB1ADE /* CashierViewController.h */,
+				8DCB31481D8D925300BB1ADE /* CashierViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8DE3F85B1D84C50C0021668A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D561EF61D88F1C1004C0EEA /* CustomerModel.h */,
+				8D561EF71D88F1C1004C0EEA /* CustomerModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE3F83C1D8486B40021668A /* ViewController.m in Sources */,
+				8DCB31491D8D925300BB1ADE /* CashierViewController.m in Sources */,
+				8DE3F83C1D8486B40021668A /* CashierLineViewController.m in Sources */,
+				8DCB31461D8B8BD200BB1ADE /* AddCustomerViewController.m in Sources */,
 				8DE3F8391D8486B40021668A /* AppDelegate.m in Sources */,
+				8DCB314C1D8D9BBD00BB1ADE /* CustomBarButtonItem.m in Sources */,
 				8DE3F8361D8486B40021668A /* main.m in Sources */,
+				8DE3F85E1D84C5730021668A /* RoundedButton.m in Sources */,
+				8D561EF81D88F1C1004C0EEA /* CustomerModel.m in Sources */,
+				8D561EF51D88E1B1004C0EEA /* CustomerViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +478,7 @@
 				8DE3F8551D8486B40021668A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DE3F8561D8486B40021668A /* Build configuration list for PBXNativeTarget "CashierLineTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +487,7 @@
 				8DE3F8581D8486B40021668A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
