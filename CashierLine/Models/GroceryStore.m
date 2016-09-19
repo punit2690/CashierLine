@@ -57,7 +57,6 @@
                 CashierLine *line = self.cashierArray[lineForCustomerB];
                 [line addCustomer:customer];
                 NSLog(@"Customer %lu with begin time %lu assigned to register %lu", customer.type, customer.startTime, lineForCustomerB);
-
             }
         }
     }
@@ -92,9 +91,8 @@
         CashierLine *lineToUse = self.cashierArray[lineNumberToUse];
 
         for (NSUInteger i=1;i<self.cashierArray.count;i++) {
-            //We make an assumtion here that Customer type A wont prefer to join an empty line since it hasn't been explicitely mentioned as in the case of Cutomer type B
             CashierLine *line = self.cashierArray[i];
-            if ((line.numberOfCustomersInLine > 0) && line.numberOfCustomersInLine < lineToUse.numberOfCustomersInLine) {
+            if (line.numberOfCustomersInLine < lineToUse.numberOfCustomersInLine) {
                 lineToUse = line;
                 lineNumberToUse = i;
             }

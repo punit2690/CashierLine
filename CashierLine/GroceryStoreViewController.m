@@ -27,12 +27,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    Customer *customer1 = [[Customer alloc] initWithType:CustomerTypeA
+    /*Customer *customer1 = [[Customer alloc] initWithType:CustomerTypeA
                                                startTime:1
                                         andNumberOfItems:5];
     Customer *customer2 = [[Customer alloc] initWithType:CustomerTypeB
                                                startTime:2
-                                        andNumberOfItems:5];
+                                        andNumberOfItems:1];
     Customer *customer3 = [[Customer alloc] initWithType:CustomerTypeA
                                                startTime:3
                                         andNumberOfItems:5];
@@ -42,7 +42,7 @@
     Customer *customer5 = [[Customer alloc] initWithType:CustomerTypeA
                                                startTime:8
                                         andNumberOfItems:2];
-    self.customerArray = @[customer1, customer2, customer3, customer4, customer5];
+    self.customerArray = @[customer1, customer2, customer3, customer4, customer5];*/
     
     [self.tableView reloadData];
     [self setAddButton];
@@ -84,9 +84,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSMutableArray *array = [NSMutableArray arrayWithArray:self.customerArray];
-        [array removeObjectAtIndex:indexPath.row];
-        self.customerArray = array.copy;
+        [self.customerArray removeObjectAtIndex:indexPath.row];
         [self.tableView reloadData];
     }
 }

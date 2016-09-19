@@ -45,10 +45,9 @@
         
         double timeSinceCheckoutStarted = ((double)(currentTime-self.scheduledCheckoutBeginTime));
         double checkoutSpeed = (double)((isInTrainingLine)?2:1);
-        self.remainingNumberOfItems = self.remainingNumberOfItems - (timeSinceCheckoutStarted/checkoutSpeed);
+        self.remainingNumberOfItems = self.numberOfItems - (timeSinceCheckoutStarted/checkoutSpeed);
     }
     
-    NSLog(@"Current Time: %lu Customer type: %lu remaining items: %f startTime: %lu scheduledCheckoutBeginTime: %lu", currentTime, self.type, self.remainingNumberOfItems, self.startTime, self.scheduledCheckoutBeginTime);
     return isStillInLine;
 }
 
