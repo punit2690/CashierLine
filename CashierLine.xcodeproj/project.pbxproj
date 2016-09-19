@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D4DD3211D8E1C2800E1D494 /* CashierLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4DD3201D8E1C2800E1D494 /* CashierLine.m */; };
+		8D4DD3241D8E1E1D00E1D494 /* GroceryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4DD3231D8E1E1D00E1D494 /* GroceryStore.m */; };
 		8D561EF51D88E1B1004C0EEA /* CustomerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */; };
-		8D561EF81D88F1C1004C0EEA /* CustomerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF71D88F1C1004C0EEA /* CustomerModel.m */; };
+		8D561EF81D88F1C1004C0EEA /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF71D88F1C1004C0EEA /* Customer.m */; };
 		8DCB31461D8B8BD200BB1ADE /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */; };
 		8DCB31491D8D925300BB1ADE /* CashierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB31481D8D925300BB1ADE /* CashierViewController.m */; };
 		8DCB314C1D8D9BBD00BB1ADE /* CustomBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB314B1D8D9BBD00BB1ADE /* CustomBarButtonItem.m */; };
 		8DE3F8361D8486B40021668A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F8351D8486B40021668A /* main.m */; };
 		8DE3F8391D8486B40021668A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F8381D8486B40021668A /* AppDelegate.m */; };
-		8DE3F83C1D8486B40021668A /* CashierLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F83B1D8486B40021668A /* CashierLineViewController.m */; };
+		8DE3F83C1D8486B40021668A /* GroceryStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3F83B1D8486B40021668A /* GroceryStoreViewController.m */; };
 		8DE3F83F1D8486B40021668A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F83D1D8486B40021668A /* Main.storyboard */; };
 		8DE3F8411D8486B40021668A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F8401D8486B40021668A /* Assets.xcassets */; };
 		8DE3F8441D8486B40021668A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F8421D8486B40021668A /* LaunchScreen.storyboard */; };
@@ -33,10 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D4DD31F1D8E1C2800E1D494 /* CashierLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CashierLine.h; path = Models/CashierLine.h; sourceTree = "<group>"; };
+		8D4DD3201D8E1C2800E1D494 /* CashierLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CashierLine.m; path = Models/CashierLine.m; sourceTree = "<group>"; };
+		8D4DD3221D8E1E1D00E1D494 /* GroceryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroceryStore.h; path = Models/GroceryStore.h; sourceTree = "<group>"; };
+		8D4DD3231D8E1E1D00E1D494 /* GroceryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroceryStore.m; path = Models/GroceryStore.m; sourceTree = "<group>"; };
 		8D561EF31D88E1B1004C0EEA /* CustomerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerViewCell.h; path = Views/CustomerViewCell.h; sourceTree = "<group>"; };
 		8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerViewCell.m; path = Views/CustomerViewCell.m; sourceTree = "<group>"; };
-		8D561EF61D88F1C1004C0EEA /* CustomerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomerModel.h; path = Models/CustomerModel.h; sourceTree = "<group>"; };
-		8D561EF71D88F1C1004C0EEA /* CustomerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerModel.m; path = Models/CustomerModel.m; sourceTree = "<group>"; };
+		8D561EF61D88F1C1004C0EEA /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customer.h; path = Models/Customer.h; sourceTree = "<group>"; };
+		8D561EF71D88F1C1004C0EEA /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customer.m; path = Models/Customer.m; sourceTree = "<group>"; };
 		8DCB31441D8B8BD200BB1ADE /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
 		8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		8DCB31471D8D925300BB1ADE /* CashierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierViewController.h; sourceTree = "<group>"; };
@@ -47,8 +53,8 @@
 		8DE3F8351D8486B40021668A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DE3F8371D8486B40021668A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DE3F8381D8486B40021668A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8DE3F83A1D8486B40021668A /* CashierLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashierLineViewController.h; sourceTree = "<group>"; };
-		8DE3F83B1D8486B40021668A /* CashierLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashierLineViewController.m; sourceTree = "<group>"; };
+		8DE3F83A1D8486B40021668A /* GroceryStoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroceryStoreViewController.h; sourceTree = "<group>"; };
+		8DE3F83B1D8486B40021668A /* GroceryStoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroceryStoreViewController.m; sourceTree = "<group>"; };
 		8DE3F83E1D8486B40021668A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DE3F8401D8486B40021668A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE3F8431D8486B40021668A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -146,8 +152,8 @@
 		8DE3F85A1D84C5040021668A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8DE3F83A1D8486B40021668A /* CashierLineViewController.h */,
-				8DE3F83B1D8486B40021668A /* CashierLineViewController.m */,
+				8DE3F83A1D8486B40021668A /* GroceryStoreViewController.h */,
+				8DE3F83B1D8486B40021668A /* GroceryStoreViewController.m */,
 				8DCB31441D8B8BD200BB1ADE /* AddCustomerViewController.h */,
 				8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */,
 				8DCB31471D8D925300BB1ADE /* CashierViewController.h */,
@@ -159,8 +165,12 @@
 		8DE3F85B1D84C50C0021668A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8D561EF61D88F1C1004C0EEA /* CustomerModel.h */,
-				8D561EF71D88F1C1004C0EEA /* CustomerModel.m */,
+				8D561EF61D88F1C1004C0EEA /* Customer.h */,
+				8D561EF71D88F1C1004C0EEA /* Customer.m */,
+				8D4DD31F1D8E1C2800E1D494 /* CashierLine.h */,
+				8D4DD3201D8E1C2800E1D494 /* CashierLine.m */,
+				8D4DD3221D8E1E1D00E1D494 /* GroceryStore.h */,
+				8D4DD3231D8E1E1D00E1D494 /* GroceryStore.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -270,13 +280,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCB31491D8D925300BB1ADE /* CashierViewController.m in Sources */,
-				8DE3F83C1D8486B40021668A /* CashierLineViewController.m in Sources */,
+				8DE3F83C1D8486B40021668A /* GroceryStoreViewController.m in Sources */,
 				8DCB31461D8B8BD200BB1ADE /* AddCustomerViewController.m in Sources */,
 				8DE3F8391D8486B40021668A /* AppDelegate.m in Sources */,
+				8D4DD3211D8E1C2800E1D494 /* CashierLine.m in Sources */,
 				8DCB314C1D8D9BBD00BB1ADE /* CustomBarButtonItem.m in Sources */,
 				8DE3F8361D8486B40021668A /* main.m in Sources */,
 				8DE3F85E1D84C5730021668A /* RoundedButton.m in Sources */,
-				8D561EF81D88F1C1004C0EEA /* CustomerModel.m in Sources */,
+				8D4DD3241D8E1E1D00E1D494 /* GroceryStore.m in Sources */,
+				8D561EF81D88F1C1004C0EEA /* Customer.m in Sources */,
 				8D561EF51D88E1B1004C0EEA /* CustomerViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

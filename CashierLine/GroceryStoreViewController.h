@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CashierLineViewController : UIViewController
+@interface GroceryStoreViewController : UIViewController
 
 @property (nonatomic, assign) NSUInteger numberOfCashierLines;
 

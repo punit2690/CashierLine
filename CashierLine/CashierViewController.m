@@ -7,7 +7,7 @@
 //
 
 #import "CashierViewController.h"
-#import "CashierLineViewController.h"
+#import "GroceryStoreViewController.h"
 #import "CustomBarButtonItem.h"
 
 @interface CashierViewController ()
@@ -58,7 +58,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    CashierLineViewController *cashierLineVC = [segue destinationViewController];
-    cashierLineVC.numberOfCashierLines = self.numberOfLinesTextfield.text.longLongValue;
+    GroceryStoreViewController *groceryStoreVC = [segue destinationViewController];
+    groceryStoreVC.numberOfCashierLines = self.numberOfLinesTextfield.text.longLongValue;
 }
 @end

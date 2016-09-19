@@ -25,13 +25,13 @@
 
 
 - (void)prepareForReuse {
-    self.customerModel = nil;
+    self.customer = nil;
 }
 
-- (void)setCustomerModel:(CustomerModel *)customerModel {
-    _customerModel = customerModel;
-    self.customerTypeLabel.text = (customerModel)? (customerModel.type == CustomerTypeA)? @"A" : @"B" : @"";
-    self.timeLabel.text = [NSString stringWithFormat:@"%lu", customerModel.startTime];
-    self.numberOfItemsLabel.text = [NSString stringWithFormat:@"%lu", customerModel.numberOfItems];
+- (void)setCustomer:(Customer *)customer {
+    _customer = customer;
+    self.customerTypeLabel.text = (customer)? (customer.type == CustomerTypeA)? @"A" : @"B" : @"";
+    self.timeLabel.text = [NSString stringWithFormat:@"%lu", customer.startTime];
+    self.numberOfItemsLabel.text = [NSString stringWithFormat:@"%lu", customer.numberOfItems];
 }
 @end

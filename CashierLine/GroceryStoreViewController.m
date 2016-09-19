@@ -6,52 +6,70 @@
 //  Copyright © 2016 Punit Kulkarni. All rights reserved.
 //
 
-#import "CashierLineViewController.h"
+#import "GroceryStoreViewController.h"
 #import "CustomerViewCell.h"
-#import "CustomerModel.h"
+#import "Customer.h"
 #import "AddCustomerViewController.h"
 #import "CustomBarButtonItem.h"
+#import "GroceryStore.h"
 
-@interface CashierLineViewController ()<UITableViewDelegate, UITableViewDataSource, AddCustomerViewControllerDelegate>
+@interface GroceryStoreViewController ()<UITableViewDelegate, UITableViewDataSource, AddCustomerViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (copy, nonatomic) NSArray *customerArray;
-@property (strong, nonatomic) CustomerModel *selectedCustomer;
+@property (strong, nonatomic) NSMutableArray *customerArray;
+@property (strong, nonatomic) Customer *selectedCustomer;
 
 @end
 
-@implementation CashierLineViewController
+@implementation GroceryStoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    CustomerModel *one = [[CustomerModel alloc] initWithType:CustomerTypeA
-                                             startTime:3
-                                      andNumberOfItems:4];
-    CustomerModel *two = [[CustomerModel alloc] initWithType:CustomerTypeB
-                                             startTime:1
-                                      andNumberOfItems:5];
-    CustomerModel *three = [[CustomerModel alloc] initWithType:CustomerTypeA
-                                             startTime:8
-                                      andNumberOfItems:5];
-    CustomerModel *four = [[CustomerModel alloc] initWithType:CustomerTypeB
-                                             startTime:2
-                                      andNumberOfItems:9];
-    CustomerModel *five = [[CustomerModel alloc] initWithType:CustomerTypeA
-                                             startTime:9
-                                      andNumberOfItems:1];
-    self.customerArray = @[one, two, three, four, five];
+    Customer *customer1 = [[Customer alloc] initWithType:CustomerTypeA
+                                               startTime:1
+                                        andNumberOfItems:5];
+    Customer *customer2 = [[Customer alloc] initWithType:CustomerTypeB
+                                               startTime:2
+                                        andNumberOfItems:5];
+    Customer *customer3 = [[Customer alloc] initWithType:CustomerTypeA
+                                               startTime:3
+                                        andNumberOfItems:5];
+    Customer *customer4 = [[Customer alloc] initWithType:CustomerTypeB
+                                               startTime:5
+                                        andNumberOfItems:3];
+    Customer *customer5 = [[Customer alloc] initWithType:CustomerTypeA
+                                               startTime:8
+                                        andNumberOfItems:2];
+    self.customerArray = @[customer1, customer2, customer3, customer4, customer5];
+    
     [self.tableView reloadData];
     [self setAddButton];
+}
+
+- (IBAction)calculate:(id)sender {
+    
+    GroceryStore *groceryStore = [[GroceryStore alloc] initWithNumberofCounters:self.numberOfCashierLines
+                                                                   andCustomers:[self.customerArray copy]];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Result"
+                                                                   message:[NSString stringWithFormat:@"All customers will be done checking out at t=%lu", groceryStore.finishTime]
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Dismiss"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nil]];
+    
+    [self presentViewController:alertController
+                       animated:YES
+                     completion:nil];
 }
 
 #pragma mark - UITableView DataSource/Delegate methods
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CustomerViewCell *customerViewCell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
-    CustomerModel *customerModel = [self.customerArray objectAtIndex:indexPath.row];
-    customerViewCell.customerModel = customerModel;
+    Customer *customer = [self.customerArray objectAtIndex:indexPath.row];
+    customerViewCell.customer = customer;
     
     return customerViewCell;
 }
@@ -81,17 +99,16 @@
 }
 #pragma mark - AddCustomerVCDelegate
 
-- (void)addCustomerModel:(CustomerModel *)customerModel {
-    NSMutableArray *mutableArray = [self.customerArray mutableCopy];
-    [mutableArray addObject:customerModel];
-    self.customerArray = mutableArray.copy;
+- (void)addCustomerModel:(Customer *)customer {
+    if (!self.customerArray) {
+        self.customerArray = [NSMutableArray new];
+    }
+    [self.customerArray addObject:customer];
     [self.tableView reloadData];
 }
 
-- (void)editCustomerModel:(CustomerModel *)customerModel atIndex:(NSUInteger)index {
-    NSMutableArray *mutableArray = [self.customerArray mutableCopy];
-    [mutableArray replaceObjectAtIndex:index withObject:customerModel];
-    self.customerArray = mutableArray.copy;
+- (void)editCustomerModel:(Customer *)customer atIndex:(NSUInteger)index {
+    [self.customerArray replaceObjectAtIndex:index withObject:customer];
     [self.tableView reloadData];
 }
 
@@ -110,7 +127,7 @@
     AddCustomerViewController *addCustomerVC = [segue destinationViewController];
     
     if ([segue.identifier isEqualToString:@"editCustomer"]) {
-        addCustomerVC.customerModel = self.selectedCustomer;
+        addCustomerVC.customer = self.selectedCustomer;
         addCustomerVC.isEditing = YES;
         addCustomerVC.customerModelIndex = [self.tableView indexPathForSelectedRow].row;
     }

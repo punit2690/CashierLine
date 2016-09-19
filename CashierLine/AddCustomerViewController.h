@@ -7,20 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomerModel.h"
+#import "Customer.h"
 
 @protocol AddCustomerViewControllerDelegate
 
 @required
-- (void)addCustomerModel:(CustomerModel *)customerModel;
-- (void)editCustomerModel:(CustomerModel *)customerModel atIndex:(NSUInteger)index;
+- (void)addCustomerModel:(Customer *)customer;
+- (void)editCustomerModel:(Customer *)customer atIndex:(NSUInteger)index;
 
 @end
 
 @interface AddCustomerViewController : UIViewController
 
 @property (nonatomic, weak) id<AddCustomerViewControllerDelegate> delegate;
-@property (nonatomic, strong) CustomerModel *customerModel;
+@property (nonatomic, strong) Customer *customer;
 @property (nonatomic, assign) BOOL isEditing;
 @property (nonatomic, assign) NSUInteger customerModelIndex;
 

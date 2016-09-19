@@ -27,13 +27,14 @@
     if (self.isEditing) {
         self.closeButton.hidden = YES;
         [self.addButton setTitle:@"Confirm" forState:UIControlStateNormal];
-        self.timeTextField.text = [NSString stringWithFormat:@"%lu", self.customerModel.startTime];
-        self.numberOfItemsTextField.text = [NSString stringWithFormat:@"%lu", self.customerModel.numberOfItems];
-        self.customerTypeSegmentedControl.selectedSegmentIndex = (self.customerModel.type == CustomerTypeA)? 0 : 1;
+        self.timeTextField.text = [NSString stringWithFormat:@"%lu", self.customer.startTime];
+        self.numberOfItemsTextField.text = [NSString stringWithFormat:@"%lu", self.customer.numberOfItems];
+        self.customerTypeSegmentedControl.selectedSegmentIndex = (self.customer.type == CustomerTypeA)? 0 : 1;
     } else {
         self.closeButton.hidden = NO;
-        self.customerModel = [[CustomerModel alloc] init];
-        self.customerModel.type = CustomerTypeA;
+        self.customer = [[Customer alloc] initWithType:CustomerTypeA
+                                             startTime:0
+                                      andNumberOfItems:0];
     }
 }
 
@@ -54,16 +55,16 @@
 - (IBAction)addCustomer:(id)sender {
     
     if (self.timeTextField.text.length && self.numberOfItemsTextField.text.length) {
-        self.customerModel.startTime = self.timeTextField.text.integerValue;
-        self.customerModel.numberOfItems = self.numberOfItemsTextField.text.integerValue;
+        self.customer.startTime = self.timeTextField.text.integerValue;
+        self.customer.numberOfItems = self.numberOfItemsTextField.text.integerValue;
 
         if (self.isEditing) {
-            [self.delegate editCustomerModel:self.customerModel
+            [self.delegate editCustomerModel:self.customer
                                      atIndex:self.customerModelIndex];
             [self.navigationController popViewControllerAnimated:YES];
         }
         else {
-            [self.delegate addCustomerModel:self.customerModel];
+            [self.delegate addCustomerModel:self.customer];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }
@@ -78,7 +79,7 @@
 }
 
 - (IBAction)customerTypeChanged:(UISegmentedControl *)sender {
-    self.customerModel.type = (sender.selectedSegmentIndex == 1)? CustomerTypeB:CustomerTypeA;
+    self.customer.type = (sender.selectedSegmentIndex == 1)? CustomerTypeB:CustomerTypeA;
 }
 
 - (IBAction)textfieldDidEndEditing:(id)sender {

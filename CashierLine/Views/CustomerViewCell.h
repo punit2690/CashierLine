@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomerModel.h"
+#import "Customer.h"
 
 @interface CustomerViewCell : UITableViewCell
 
-@property (nonatomic, strong) CustomerModel *customerModel;
+@property (nonatomic, copy) Customer *customer;
 
 @end
