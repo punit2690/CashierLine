@@ -11,6 +11,7 @@
 		8D4DD3241D8E1E1D00E1D494 /* GroceryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4DD3231D8E1E1D00E1D494 /* GroceryStore.m */; };
 		8D561EF51D88E1B1004C0EEA /* CustomerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */; };
 		8D561EF81D88F1C1004C0EEA /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D561EF71D88F1C1004C0EEA /* Customer.m */; };
+		8D56659C1D8FF5E8007FEF3D /* Grocery Store codeing problem-1 (1).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8D56659B1D8FF5E8007FEF3D /* Grocery Store codeing problem-1 (1).pdf */; };
 		8DCB31461D8B8BD200BB1ADE /* AddCustomerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */; };
 		8DCB31491D8D925300BB1ADE /* CashierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB31481D8D925300BB1ADE /* CashierViewController.m */; };
 		8DCB314C1D8D9BBD00BB1ADE /* CustomBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB314B1D8D9BBD00BB1ADE /* CustomBarButtonItem.m */; };
@@ -43,6 +44,7 @@
 		8D561EF41D88E1B1004C0EEA /* CustomerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomerViewCell.m; path = Views/CustomerViewCell.m; sourceTree = "<group>"; };
 		8D561EF61D88F1C1004C0EEA /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customer.h; path = Models/Customer.h; sourceTree = "<group>"; };
 		8D561EF71D88F1C1004C0EEA /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customer.m; path = Models/Customer.m; sourceTree = "<group>"; };
+		8D56659B1D8FF5E8007FEF3D /* Grocery Store codeing problem-1 (1).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Grocery Store codeing problem-1 (1).pdf"; sourceTree = "<group>"; };
 		8DCB31441D8B8BD200BB1ADE /* AddCustomerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomerViewController.h; sourceTree = "<group>"; };
 		8DCB31451D8B8BD200BB1ADE /* AddCustomerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomerViewController.m; sourceTree = "<group>"; };
 		8DCB31471D8D925300BB1ADE /* CashierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierViewController.h; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		8DE3F8341D8486B40021668A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D56659B1D8FF5E8007FEF3D /* Grocery Store codeing problem-1 (1).pdf */,
 				8DE3F8401D8486B40021668A /* Assets.xcassets */,
 				8DE3F8451D8486B40021668A /* Info.plist */,
 				8DE3F8421D8486B40021668A /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE3F8441D8486B40021668A /* LaunchScreen.storyboard in Resources */,
+				8D56659C1D8FF5E8007FEF3D /* Grocery Store codeing problem-1 (1).pdf in Resources */,
 				8DE3F8411D8486B40021668A /* Assets.xcassets in Resources */,
 				8DE3F83F1D8486B40021668A /* Main.storyboard in Resources */,
 			);
